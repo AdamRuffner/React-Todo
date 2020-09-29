@@ -13,7 +13,7 @@ class TodoForm extends React.Component {
     };
 
     submitTask = e => {
-        e.preventdefault();
+        e.preventDefault();
         this.setState({task: '' });
         this.props.addTask(e, this.state.task);
     };
@@ -29,7 +29,7 @@ class TodoForm extends React.Component {
                 />
                 <button>Add</button>
             </form>
-        )
+        );
     }
 }
 
